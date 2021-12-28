@@ -1,11 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:wght@300&display=swap');
-
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.section
+{
+    width: 100%;
+    height: 720px;
+    background-image: url('https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .root{
+    height: 100%;
+    width: 100%;
+}  */
 .main
 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     align-items: center;
     justify-content: center; 
+    /* border: 2px solid blue; */
+}
+.box-controller
+{
+    width: 55%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-controller
+{ 
+    /* width: 20%; */
+    margin-left: 0;
 }
 .input-text
 {
@@ -13,6 +43,9 @@
     display: flex;
     align-items: center;
     justify-content: center; */
+    /* border: 2px solid red; */
+    /* width: 100vw;
+    height: 100vh; */
 }
 input :focus
 {
@@ -21,11 +54,11 @@ input :focus
 #text
 {
     font-size: 22px;
-    border: 3px solid blue;
+    /* border: 3px solid grey; */
     /* width: 335px; */
     /* color: blue; */
     padding: 2px;
-    width: 100%;
+    width: 40%;
 }
 ::placeholder
 {
@@ -36,13 +69,14 @@ input :focus
     font-size: 22px;
    background-color:  black;
    border: 2px solid black;
-   margin-left: 10px;
+   /* margin-left: 10px; */
    padding: 2px;
 }
 .button a
 {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 button :hover
 {
@@ -51,12 +85,12 @@ button :hover
 }
 .article
 {
-
+    /* border: 2px solid green; */
 }
 .article-box
 {
-    height: 450px;
-    width: 679px;
+    height: 60vh;
+    width: 90vh;
     /* border: 2px solid black; */
     margin: 0 auto;
     margin-top: 20px;
@@ -78,7 +112,7 @@ button :hover
 }
 .wheather img{
     height: 175px;
-    width: 150x;
+    width: 50%;
     border-radius: 100%;
     /* border: 2px solid black; */
     margin-top: 10px;
@@ -155,46 +189,62 @@ button :hover
     margin-top: 5px;
     border-radius: 100%;
 }
-.text-controller
+/* .text-controller
 {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+ 
 }
 .box-controller
 {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* width: 20%; */
+ 
+} */
+.main-root
+{
+   
 }
 
-@media only screen and (max-width:700px)
+@media only screen and (max-width:1000px)
 {
-
-    .box-controller
+   
+    /* .root{
+        display: inline-block;
+        width: 100%;
+        height: 120%;
+    } */
+    .section
     {
-        width: 120%;
-        /* display: grid;
-        align-items: center; */
+        width: 100%;
+        height: 740px;
     }
-    #text{
-        font-size: 33px;
-    }
-    .button
+    .input-text
     {
-        /* margin-left: 20px; */
-        padding: 2px;
-        font-size: 33px;
+        width: 100%;
     }
     .main{
-        display: flex;
-        justify-content: center;
-        align-items: center;   
+         width: 100%;
     }
-    /* input[type=text]
+    .box-controller
     {
-        font-size: 25px;
-        width: 200%;
-    } */
+        width: 70%;
+    }
+    #text
+    {
+        width: 60%;
+    }
+    .article-box
+    {
+        width: 96%;
+        height: 80%;
+    }
+    .wheather img
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sunset-data,.sunrise-data,.humidity-data
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
